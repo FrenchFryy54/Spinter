@@ -132,10 +132,6 @@ def fromfile(infile, outfile):
 if __name__ == "__main__":
     #main()
     starting = 481
-    bots = networks2.loadbots("gen400.txt")
     while True:
-        #fromfile(f"gen{starting}.txt", f"gen{starting + 1}.txt")
-
-        mygame = game(None, bots.pop())
-        mygame.sim()
+        fromfile(f"gen{starting}.txt", f"gen{starting + 1}.txt")
         starting += 1
